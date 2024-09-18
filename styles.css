@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+    --primary-color: #141414;
+    --light-gray: #808084;
+    --text-bg: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 'inter';
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* HEADER SECTION */
+
+.nav-container{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.nav-content{
+    max-width: 87%;
+    max-height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0.6rem 4rem;
+}
+
+.nav-image {
+    height: 1.3rem;
+}
+
+.nav-logo{
+    width: 59%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.links-container{
+    width: 50%;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4.5rem;
+}
+
+.hamburger{
+    display: block;
+}
+
+.burger-bar {
+    height: 3rem;
+}
+
+@media screen and (min-width: 992px) {
+    .links-container {
+        display: flex;
+        padding-right: 2rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav-container {
+        margin-top: 3rem;
+    }
+
+    .nav-content {
+        padding: 0.3rem 2rem;
+        align-items: start;
+    }
+    .nav-logo {
+        align-self: flex-end;
+        padding-bottom: 0.6rem; 
+    }
+}
+
+
+.socials {
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid rgb(179, 177, 177);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.socials:hover {
+    background-color: var(--text-bg);
+}
+
+.socials:hover i{
+    color: #ffff;
+}
+
+.socials i {
+    color: var(--light-gray);
+    font-size: 0.8rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.6rem;
+    padding-left: 0;
+    cursor: pointer;
+}
+
+.nav-links a {
+    width: 50%;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.87rem;
+}
+
+.nav-social-links{
+    width: 50%;
+    display: flex;
+    gap: 1rem;
+}
+
+
+/* MAIN SECTION */
