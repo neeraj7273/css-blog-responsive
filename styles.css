@@ -57,7 +57,7 @@ a{
     display: none;
     align-items: center;
     justify-content: space-between;
-    gap: 4.5rem;
+    gap: 5.5rem;
 }
 
 .hamburger{
@@ -140,3 +140,76 @@ a{
 
 
 /* MAIN SECTION */
+.main-container{
+    width: 100%;
+    height: 90vh;
+    padding-top: 6.77rem;
+}
+
+.main-content{
+    position: relative;
+    max-width: 87%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.main-profile-container{
+    position: absolute;
+    left: 2rem;
+    top: 0.67rem;
+}
+
+
+.main-profile-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.main-profile-image{
+    margin-bottom: 0.8rem;
+}
+
+.main-text{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.main-span-text{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--light-gray);
+}
+
+.main-desc{
+    font-weight: bolder;
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    text-transform: capitalize;
+}
+
+.main-timeline{
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+    color: var(--light-gray);
+    margin-top: 2rem;
+}
+
+
+.main-image-container{
+    position: absolute;
+    right: 4.7rem;
+}
+
+
+
+
+
+
+
