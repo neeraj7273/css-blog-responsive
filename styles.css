@@ -29,6 +29,7 @@ a{
 .nav-container{
     width: 100%;
     margin-top: 2rem;
+    
 }
 
 .nav-content{
@@ -39,6 +40,7 @@ a{
     align-items: center;
     margin: 0 auto;
     padding: 0.6rem 4rem;
+    
 }
 
 .nav-image {
@@ -68,7 +70,7 @@ a{
     height: 3rem;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1210px) {
     .links-container {
         display: flex;
         padding-right: 2rem;
@@ -143,21 +145,15 @@ a{
 .main-container{
     width: 100%;
     height: 90vh;
-    padding-top: 6.77rem;
+    padding-top: 5.26rem;
 }
 
 .main-content{
-    position: relative;
     max-width: 87%;
     display: flex;
     margin: 0 auto;
-    justify-content: space-around;
-}
-
-.main-profile-container{
-    position: absolute;
-    left: 2rem;
-    top: 0.67rem;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -165,11 +161,7 @@ a{
     height: 100%;
     display: flex;
     flex-direction: column;
-    width: 45%;
-}
-
-.main-profile-image{
-    margin-bottom: 0.8rem;
+    align-items: center;
 }
 
 .main-text{
@@ -178,6 +170,7 @@ a{
     align-items: center;
     font-size: 1.6rem;
     font-weight: 500;
+    margin-top: 0.4rem;
 }
 
 .main-span-text{
@@ -188,9 +181,22 @@ a{
 
 .main-desc{
     font-weight: bolder;
-    font-size: 3rem;
+    font-size: 1.8rem;
     margin-top: 1.5rem;
+    text-align: center;
     text-transform: capitalize;
+    word-spacing: 0.3rem;
+}
+
+.main-image-container {
+    width: 80%;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: center;
 }
 
 .main-timeline{
@@ -199,12 +205,83 @@ a{
     gap: 0.1rem;
     color: var(--light-gray);
     margin-top: 2rem;
+    font-size: 0.9rem;
+    margin-bottom: 2.7rem;
 }
 
 
-.main-image-container{
-    position: absolute;
-    right: 4.7rem;
+@media screen and (min-width: 1210px) {
+
+    .main-container {
+        padding-top: 6.77rem;
+    }
+    .main-content{
+        position: relative;
+        max-width: 87%;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+    
+    .main-profile-container{
+        position: absolute;
+        left: 2rem;
+        top: 0.67rem;
+    }
+
+    .main-image-container{
+        position: absolute;
+        right: 4.7rem;
+        top: 0.2rem;
+        width: auto;
+    }
+    
+    
+    .main-profile-content{
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        width: 45%;
+    }
+    
+    
+    .main-profile-image{
+        width: 100%;
+        margin-bottom: 0.8rem;
+    }
+    
+    .main-text{
+        width: 100%;
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    
+    .main-span-text{
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: var(--light-gray);
+    }
+    
+    .main-desc{
+        font-weight: bolder;
+        font-size: 3rem;
+        margin-top: 1.5rem;
+        text-transform: capitalize;
+        text-align: left;
+    }
+    
+    .main-timeline{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 0.1rem;
+        color: var(--light-gray);
+        margin-top: 2rem;
+    }
+    
 }
 
 
